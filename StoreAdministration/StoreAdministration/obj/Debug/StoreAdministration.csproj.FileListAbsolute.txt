@@ -1,0 +1,10 @@
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\StoreAdministration.exe.config
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\StoreAdministration.exe
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\StoreAdministration.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.AssemblyReference.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.MainForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Properties.Resources.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.GenerateResource.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.CoreCompileInputs.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.exe
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.pdb
