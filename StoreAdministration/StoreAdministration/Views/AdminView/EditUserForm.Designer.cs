@@ -88,12 +88,14 @@
             // 
             // saveButton
             // 
-            this.saveButton.Location = new System.Drawing.Point(84, 213);
+            this.saveButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.saveButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveButton.Location = new System.Drawing.Point(89, 213);
             this.saveButton.Name = "saveButton";
             this.saveButton.Size = new System.Drawing.Size(75, 23);
             this.saveButton.TabIndex = 6;
             this.saveButton.Text = "Save";
-            this.saveButton.UseVisualStyleBackColor = true;
+            this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
             // EditUserForm

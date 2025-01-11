@@ -82,11 +82,47 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Views\AdminView\AddProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\AddProductForm.Designer.cs">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\CreateUserForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\CreateUserForm.Designer.cs">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\AdminView\EditUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\AdminView\EditUserForm.Designer.cs">
       <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\ManageCategoriesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\ManageCategoriesForm.Designer.cs">
+      <DependentUpon>ManageCategoriesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\ModifyQuantityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\ModifyQuantityForm.Designer.cs">
+      <DependentUpon>ModifyQuantityForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\SalesHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\SalesHistoryForm.Designer.cs">
+      <DependentUpon>SalesHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\SellProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\SellProductForm.Designer.cs">
+      <DependentUpon>SellProductForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\AdminView\StoreInventoryForm.cs">
       <SubType>Form</SubType>
@@ -124,8 +160,29 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\AdminView\AddProductForm.resx">
+      <DependentUpon>AddProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\CreateUserForm.resx">
+      <DependentUpon>CreateUserForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\AdminView\EditUserForm.resx">
       <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\ManageCategoriesForm.resx">
+      <DependentUpon>ManageCategoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\ModifyQuantityForm.resx">
+      <DependentUpon>ModifyQuantityForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\SalesHistoryForm.resx">
+      <DependentUpon>SalesHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\SellProductForm.resx">
+      <DependentUpon>SellProductForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\StoreInventoryForm.resx">
+      <DependentUpon>StoreInventoryForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\AdminView\UserManagementForm.resx">
       <DependentUpon>UserManagementForm.cs</DependentUpon>

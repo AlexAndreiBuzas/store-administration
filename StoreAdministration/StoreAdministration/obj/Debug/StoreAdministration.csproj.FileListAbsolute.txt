@@ -1,5 +1,4 @@
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.AssemblyReference.cache
-C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.MainForm.resources
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Properties.Resources.resources
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.GenerateResource.cache
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.CoreCompileInputs.cache
@@ -41,3 +40,20 @@ C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Sto
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.xml
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.UserView.StoreForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.LogInForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.AddProductForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.EditUserForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.ManageCategoriesForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.ModifyQuantityForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.SalesHistoryForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.SellProductForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.StoreInventoryForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.RegisterForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.UserView.StoreForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Authentication.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.EF6.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Authentication.pdb
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.xml
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.AdminView.CreateUserForm.resources

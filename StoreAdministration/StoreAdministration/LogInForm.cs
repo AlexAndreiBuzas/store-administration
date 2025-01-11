@@ -1,10 +1,9 @@
-﻿using Authentication;
+﻿using System;
+using System.Windows.Forms;
+using Authentication;
 using StoreAdministration.Controllers;
 using StoreAdministration.Data;
-using StoreAdministration.Views.AdminView;
 using StoreAdministration.Views.UserView;
-using System;
-using System.Windows.Forms;
 
 namespace StoreAdministration
 {

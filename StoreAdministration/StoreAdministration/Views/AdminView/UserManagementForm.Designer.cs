@@ -37,17 +37,19 @@
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(220, 177);
+            this.addButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.addButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.addButton.Location = new System.Drawing.Point(246, 206);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 0;
             this.addButton.Text = "Add";
-            this.addButton.UseVisualStyleBackColor = true;
+            this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(301, 177);
+            this.updateButton.Location = new System.Drawing.Point(327, 206);
             this.updateButton.Name = "updateButton";
             this.updateButton.Size = new System.Drawing.Size(75, 23);
             this.updateButton.TabIndex = 1;
@@ -57,18 +59,20 @@
             // 
             // deleteButton
             // 
-            this.deleteButton.Location = new System.Drawing.Point(382, 177);
+            this.deleteButton.BackColor = System.Drawing.Color.Red;
+            this.deleteButton.ForeColor = System.Drawing.Color.White;
+            this.deleteButton.Location = new System.Drawing.Point(408, 206);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(75, 23);
             this.deleteButton.TabIndex = 2;
             this.deleteButton.Text = "Delete";
-            this.deleteButton.UseVisualStyleBackColor = true;
+            this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // usersDataGridView
             // 
             this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.usersDataGridView.Location = new System.Drawing.Point(38, 41);
             this.usersDataGridView.Name = "usersDataGridView";
             this.usersDataGridView.Size = new System.Drawing.Size(445, 150);
             this.usersDataGridView.TabIndex = 3;
@@ -77,7 +81,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(468, 221);
+            this.ClientSize = new System.Drawing.Size(530, 257);
             this.Controls.Add(this.usersDataGridView);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.updateButton);

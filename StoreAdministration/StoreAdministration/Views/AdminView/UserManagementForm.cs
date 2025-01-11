@@ -1,8 +1,10 @@
 ﻿using StoreAdministration.Controllers;
 using StoreAdministration.Data;
 using StoreAdministration.Models;
+using StoreAdministration.Views.AdminView;
 using System;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -11,13 +13,15 @@ namespace StoreAdministration.Views
     public partial class UserManagementForm : Form
     {
         private readonly ApplicationDbContext _context;
+        UserController userController = new UserController(new ApplicationDbContext());
 
-        public UserManagementForm(UserController userController)
+        public UserManagementForm()
         {
             InitializeComponent();
             _context = new ApplicationDbContext();
 
         }
+
 
         private async void UserManagementForm_Load(object sender, EventArgs e)
         {
@@ -37,8 +41,8 @@ namespace StoreAdministration.Views
 
         private void AddButton_Click(object sender, EventArgs e)
         {
-            var registerForm = new RegisterForm();
-            registerForm.Show();
+            var createUserForm = new CreateUserForm();
+            createUserForm.Show();
             this.Hide();
         }
 
