@@ -1,0 +1,11 @@
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\bin\Release\Localisation.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\bin\Release\Localisation.pdb
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\bin\Release\ro\Localisation.resources.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.csproj.AssemblyReference.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.LanguageString.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.LanguageString.ro.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.csproj.GenerateResource.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.csproj.CoreCompileInputs.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\ro\Localisation.resources.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Release\Localisation.pdb

@@ -14,3 +14,20 @@ C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Sto
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdm.A8411B28.Up2Date
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\store_db.sqlite
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.AssemblyReference.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.MainForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Properties.Resources.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.GenerateResource.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.CoreCompileInputs.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.UserManagementForm.resources
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\store_db.sqlite
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\StoreAdministration.exe.config
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\StoreAdministration.exe
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\StoreAdministration.pdb
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.xml
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdm.A8411B28.Up2Date
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.exe
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.pdb

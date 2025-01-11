@@ -28,20 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.openUserManagementFormButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // Form1
+            // openUserManagementFormButton
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.openUserManagementFormButton.Location = new System.Drawing.Point(255, 171);
+            this.openUserManagementFormButton.Name = "openUserManagementFormButton";
+            this.openUserManagementFormButton.Size = new System.Drawing.Size(75, 23);
+            this.openUserManagementFormButton.TabIndex = 0;
+            this.openUserManagementFormButton.Text = "Users";
+            this.openUserManagementFormButton.UseVisualStyleBackColor = true;
+            this.openUserManagementFormButton.Click += new System.EventHandler(this.openUserManagementFormButton_Click);
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(349, 234);
+            this.Controls.Add(this.openUserManagementFormButton);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "MainForm";
             this.Text = "Store";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button openUserManagementFormButton;
     }
 }
 
