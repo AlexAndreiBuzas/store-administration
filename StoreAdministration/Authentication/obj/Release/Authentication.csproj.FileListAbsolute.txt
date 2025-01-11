@@ -1,0 +1,6 @@
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\bin\Release\Authentication.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\bin\Release\Authentication.pdb
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Release\Authentication.csproj.AssemblyReference.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Release\Authentication.csproj.CoreCompileInputs.cache
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Release\Authentication.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Release\Authentication.pdb
