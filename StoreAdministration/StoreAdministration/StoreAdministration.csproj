@@ -142,6 +142,12 @@
     <Compile Include="Views\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\UserView\BuyProductForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\UserView\BuyProductForm.Designer.cs">
+      <DependentUpon>BuyProductForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserView\StoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,9 @@
     <EmbeddedResource Include="Views\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\UserView\BuyProductForm.resx">
+      <DependentUpon>BuyProductForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\UserView\StoreForm.resx">
       <DependentUpon>StoreForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +223,10 @@
     <ProjectReference Include="..\Authentication\Authentication.csproj">
       <Project>{e44ecd71-39a4-4a0c-956e-b44288c69ae4}</Project>
       <Name>Authentication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Localisation\Localisation.csproj">
+      <Project>{1ba5c271-70b2-450b-90ca-39a534d90784}</Project>
+      <Name>Localisation</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />

@@ -41,7 +41,7 @@
             // CategoryNameGroupBox
             // 
             this.CategoryNameGroupBox.Controls.Add(this.productCategoryTextBox);
-            this.CategoryNameGroupBox.Location = new System.Drawing.Point(103, 85);
+            this.CategoryNameGroupBox.Location = new System.Drawing.Point(109, 67);
             this.CategoryNameGroupBox.Name = "CategoryNameGroupBox";
             this.CategoryNameGroupBox.Size = new System.Drawing.Size(454, 76);
             this.CategoryNameGroupBox.TabIndex = 1;
@@ -58,7 +58,7 @@
             // CategoriesGroupBox
             // 
             this.CategoriesGroupBox.Controls.Add(this.productCategoryItem);
-            this.CategoriesGroupBox.Location = new System.Drawing.Point(103, 338);
+            this.CategoriesGroupBox.Location = new System.Drawing.Point(109, 293);
             this.CategoriesGroupBox.Name = "CategoriesGroupBox";
             this.CategoriesGroupBox.Size = new System.Drawing.Size(454, 82);
             this.CategoriesGroupBox.TabIndex = 2;
@@ -75,22 +75,26 @@
             // 
             // saveCategoryButton
             // 
-            this.saveCategoryButton.Location = new System.Drawing.Point(335, 198);
+            this.saveCategoryButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.saveCategoryButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveCategoryButton.Location = new System.Drawing.Point(109, 159);
             this.saveCategoryButton.Name = "saveCategoryButton";
-            this.saveCategoryButton.Size = new System.Drawing.Size(222, 65);
+            this.saveCategoryButton.Size = new System.Drawing.Size(454, 65);
             this.saveCategoryButton.TabIndex = 4;
             this.saveCategoryButton.Text = "Save Category";
-            this.saveCategoryButton.UseVisualStyleBackColor = true;
+            this.saveCategoryButton.UseVisualStyleBackColor = false;
             this.saveCategoryButton.Click += new System.EventHandler(this.SaveCategoryButton_Click);
             // 
             // deleteCategory
             // 
-            this.deleteCategory.Location = new System.Drawing.Point(335, 455);
+            this.deleteCategory.BackColor = System.Drawing.Color.Red;
+            this.deleteCategory.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deleteCategory.Location = new System.Drawing.Point(109, 391);
             this.deleteCategory.Name = "deleteCategory";
-            this.deleteCategory.Size = new System.Drawing.Size(222, 65);
+            this.deleteCategory.Size = new System.Drawing.Size(454, 65);
             this.deleteCategory.TabIndex = 5;
             this.deleteCategory.Text = "Delete Category";
-            this.deleteCategory.UseVisualStyleBackColor = true;
+            this.deleteCategory.UseVisualStyleBackColor = false;
             this.deleteCategory.Click += new System.EventHandler(this.DeleteCategory_Click);
             // 
             // ManageCategoriesForm

@@ -41,7 +41,7 @@
             // ProductCategoryGroupBox
             // 
             this.ProductCategoryGroupBox.Controls.Add(this.productNameItem);
-            this.ProductCategoryGroupBox.Location = new System.Drawing.Point(107, 45);
+            this.ProductCategoryGroupBox.Location = new System.Drawing.Point(113, 59);
             this.ProductCategoryGroupBox.Name = "ProductCategoryGroupBox";
             this.ProductCategoryGroupBox.Size = new System.Drawing.Size(454, 82);
             this.ProductCategoryGroupBox.TabIndex = 2;
@@ -59,9 +59,9 @@
             // newQuantityGroupBox
             // 
             this.newQuantityGroupBox.Controls.Add(this.newQuantityPiker);
-            this.newQuantityGroupBox.Location = new System.Drawing.Point(107, 133);
+            this.newQuantityGroupBox.Location = new System.Drawing.Point(113, 147);
             this.newQuantityGroupBox.Name = "newQuantityGroupBox";
-            this.newQuantityGroupBox.Size = new System.Drawing.Size(227, 80);
+            this.newQuantityGroupBox.Size = new System.Drawing.Size(454, 80);
             this.newQuantityGroupBox.TabIndex = 3;
             this.newQuantityGroupBox.TabStop = false;
             this.newQuantityGroupBox.Text = "New Quantity";
@@ -70,24 +70,26 @@
             // 
             this.newQuantityPiker.Location = new System.Drawing.Point(6, 30);
             this.newQuantityPiker.Name = "newQuantityPiker";
-            this.newQuantityPiker.Size = new System.Drawing.Size(202, 31);
+            this.newQuantityPiker.Size = new System.Drawing.Size(432, 31);
             this.newQuantityPiker.TabIndex = 1;
             // 
             // saveProductButton
             // 
-            this.saveProductButton.Location = new System.Drawing.Point(339, 255);
+            this.saveProductButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.saveProductButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveProductButton.Location = new System.Drawing.Point(113, 243);
             this.saveProductButton.Name = "saveProductButton";
-            this.saveProductButton.Size = new System.Drawing.Size(222, 65);
+            this.saveProductButton.Size = new System.Drawing.Size(454, 65);
             this.saveProductButton.TabIndex = 4;
             this.saveProductButton.Text = "Save Product";
-            this.saveProductButton.UseVisualStyleBackColor = true;
+            this.saveProductButton.UseVisualStyleBackColor = false;
             this.saveProductButton.Click += new System.EventHandler(this.SaveProductButton_Click);
             // 
             // ModifyQuantityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 332);
+            this.ClientSize = new System.Drawing.Size(674, 358);
             this.Controls.Add(this.saveProductButton);
             this.Controls.Add(this.newQuantityGroupBox);
             this.Controls.Add(this.ProductCategoryGroupBox);

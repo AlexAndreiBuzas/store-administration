@@ -9,3 +9,14 @@ C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-admin
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Debug\ro\Localisation.resources.dll
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.dll
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\bin\Debug\Localisation.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\bin\Debug\Localisation.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\bin\Debug\ro\Localisation.resources.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.csproj.AssemblyReference.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.LanguageString.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.LanguageString.ro.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.csproj.GenerateResource.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.csproj.CoreCompileInputs.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\ro\Localisation.resources.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Localisation\obj\Debug\Localisation.pdb

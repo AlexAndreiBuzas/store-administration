@@ -43,33 +43,36 @@
             this.productsDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.productsDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.productsDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.productsDataGridView.Location = new System.Drawing.Point(0, 27);
-            this.productsDataGridView.Margin = new System.Windows.Forms.Padding(2);
+            this.productsDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.productsDataGridView.Location = new System.Drawing.Point(0, 52);
+            this.productsDataGridView.Margin = new System.Windows.Forms.Padding(4);
             this.productsDataGridView.Name = "productsDataGridView";
             this.productsDataGridView.RowHeadersWidth = 82;
             this.productsDataGridView.RowTemplate.Height = 33;
-            this.productsDataGridView.Size = new System.Drawing.Size(795, 458);
+            this.productsDataGridView.Size = new System.Drawing.Size(1590, 881);
             this.productsDataGridView.TabIndex = 4;
+            this.productsDataGridView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.productsDataGridView_CellContentDoubleClick);
             // 
             // manageMenu
             // 
+            this.manageMenu.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.manageMenu.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.manageMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.refreshProductsButton,
             this.productsSearchTextBox,
-            this.logOutButton});
+            this.logOutButton,
+            this.refreshProductsButton});
             this.manageMenu.Location = new System.Drawing.Point(0, 0);
             this.manageMenu.Name = "manageMenu";
-            this.manageMenu.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
-            this.manageMenu.Size = new System.Drawing.Size(796, 25);
+            this.manageMenu.Size = new System.Drawing.Size(1592, 43);
             this.manageMenu.TabIndex = 5;
             this.manageMenu.Text = "menuStrip1";
             // 
             // refreshProductsButton
             // 
             this.refreshProductsButton.Name = "refreshProductsButton";
-            this.refreshProductsButton.Size = new System.Drawing.Size(108, 23);
+            this.refreshProductsButton.Size = new System.Drawing.Size(212, 39);
             this.refreshProductsButton.Text = "Refresh Products";
             this.refreshProductsButton.Click += new System.EventHandler(this.refreshProductsButton_Click);
             // 
@@ -77,23 +80,25 @@
             // 
             this.productsSearchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.productsSearchTextBox.Name = "productsSearchTextBox";
-            this.productsSearchTextBox.Size = new System.Drawing.Size(177, 23);
+            this.productsSearchTextBox.Size = new System.Drawing.Size(350, 39);
+            this.productsSearchTextBox.TextChanged += new System.EventHandler(this.productsSearchTextBox_TextChangedAsync);
             // 
             // logOutButton
             // 
+            this.logOutButton.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.logOutButton.Name = "logOutButton";
-            this.logOutButton.Size = new System.Drawing.Size(62, 23);
+            this.logOutButton.Size = new System.Drawing.Size(120, 39);
             this.logOutButton.Text = "Log Out";
             this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
             // 
             // StoreForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(796, 487);
+            this.ClientSize = new System.Drawing.Size(1592, 937);
             this.Controls.Add(this.productsDataGridView);
             this.Controls.Add(this.manageMenu);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StoreForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Store";

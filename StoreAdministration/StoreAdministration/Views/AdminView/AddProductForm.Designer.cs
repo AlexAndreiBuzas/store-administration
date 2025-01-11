@@ -124,7 +124,7 @@
             this.quantityGroupBox.Controls.Add(this.quantityPiker);
             this.quantityGroupBox.Location = new System.Drawing.Point(113, 484);
             this.quantityGroupBox.Name = "quantityGroupBox";
-            this.quantityGroupBox.Size = new System.Drawing.Size(227, 80);
+            this.quantityGroupBox.Size = new System.Drawing.Size(454, 80);
             this.quantityGroupBox.TabIndex = 2;
             this.quantityGroupBox.TabStop = false;
             this.quantityGroupBox.Text = "Quantity";
@@ -133,7 +133,7 @@
             // 
             this.quantityPiker.Location = new System.Drawing.Point(6, 30);
             this.quantityPiker.Name = "quantityPiker";
-            this.quantityPiker.Size = new System.Drawing.Size(202, 31);
+            this.quantityPiker.Size = new System.Drawing.Size(432, 31);
             this.quantityPiker.TabIndex = 1;
             // 
             // ProductCategoryGroupBox
@@ -156,12 +156,14 @@
             // 
             // saveProductButton
             // 
-            this.saveProductButton.Location = new System.Drawing.Point(345, 686);
+            this.saveProductButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.saveProductButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saveProductButton.Location = new System.Drawing.Point(113, 667);
             this.saveProductButton.Name = "saveProductButton";
-            this.saveProductButton.Size = new System.Drawing.Size(222, 65);
+            this.saveProductButton.Size = new System.Drawing.Size(454, 65);
             this.saveProductButton.TabIndex = 3;
             this.saveProductButton.Text = "Save Product";
-            this.saveProductButton.UseVisualStyleBackColor = true;
+            this.saveProductButton.UseVisualStyleBackColor = false;
             this.saveProductButton.Click += new System.EventHandler(this.SaveProductButton_Click);
             // 
             // AddProductForm
@@ -169,7 +171,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(674, 763);
+            this.ClientSize = new System.Drawing.Size(674, 777);
             this.Controls.Add(this.saveProductButton);
             this.Controls.Add(this.ProductCategoryGroupBox);
             this.Controls.Add(this.quantityGroupBox);

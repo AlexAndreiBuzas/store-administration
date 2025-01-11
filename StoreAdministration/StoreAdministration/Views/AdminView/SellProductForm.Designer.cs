@@ -44,7 +44,7 @@
             // productNameGroupBox
             // 
             this.productNameGroupBox.Controls.Add(this.productNameLabel);
-            this.productNameGroupBox.Location = new System.Drawing.Point(107, 52);
+            this.productNameGroupBox.Location = new System.Drawing.Point(113, 54);
             this.productNameGroupBox.Name = "productNameGroupBox";
             this.productNameGroupBox.Size = new System.Drawing.Size(454, 62);
             this.productNameGroupBox.TabIndex = 1;
@@ -63,7 +63,7 @@
             // productQuantityGroupBox
             // 
             this.productQuantityGroupBox.Controls.Add(this.productQuantityLabel);
-            this.productQuantityGroupBox.Location = new System.Drawing.Point(107, 120);
+            this.productQuantityGroupBox.Location = new System.Drawing.Point(113, 122);
             this.productQuantityGroupBox.Name = "productQuantityGroupBox";
             this.productQuantityGroupBox.Size = new System.Drawing.Size(454, 62);
             this.productQuantityGroupBox.TabIndex = 2;
@@ -82,9 +82,9 @@
             // quantityGroupBox
             // 
             this.quantityGroupBox.Controls.Add(this.quantityPicker);
-            this.quantityGroupBox.Location = new System.Drawing.Point(107, 188);
+            this.quantityGroupBox.Location = new System.Drawing.Point(113, 190);
             this.quantityGroupBox.Name = "quantityGroupBox";
-            this.quantityGroupBox.Size = new System.Drawing.Size(227, 80);
+            this.quantityGroupBox.Size = new System.Drawing.Size(454, 80);
             this.quantityGroupBox.TabIndex = 3;
             this.quantityGroupBox.TabStop = false;
             this.quantityGroupBox.Text = "Quantity";
@@ -93,24 +93,26 @@
             // 
             this.quantityPicker.Location = new System.Drawing.Point(6, 30);
             this.quantityPicker.Name = "quantityPicker";
-            this.quantityPicker.Size = new System.Drawing.Size(202, 31);
+            this.quantityPicker.Size = new System.Drawing.Size(442, 31);
             this.quantityPicker.TabIndex = 1;
             // 
             // saleCompletionButton
             // 
-            this.saleCompletionButton.Location = new System.Drawing.Point(339, 297);
+            this.saleCompletionButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.saleCompletionButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.saleCompletionButton.Location = new System.Drawing.Point(113, 285);
             this.saleCompletionButton.Name = "saleCompletionButton";
-            this.saleCompletionButton.Size = new System.Drawing.Size(222, 65);
+            this.saleCompletionButton.Size = new System.Drawing.Size(454, 65);
             this.saleCompletionButton.TabIndex = 4;
             this.saleCompletionButton.Text = "Sale Completion";
-            this.saleCompletionButton.UseVisualStyleBackColor = true;
+            this.saleCompletionButton.UseVisualStyleBackColor = false;
             this.saleCompletionButton.Click += new System.EventHandler(this.SaleCompletionButton_Click);
             // 
             // SellProductForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 374);
+            this.ClientSize = new System.Drawing.Size(674, 397);
             this.Controls.Add(this.saleCompletionButton);
             this.Controls.Add(this.quantityGroupBox);
             this.Controls.Add(this.productQuantityGroupBox);

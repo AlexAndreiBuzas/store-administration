@@ -39,54 +39,66 @@
             // 
             this.addButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.addButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.addButton.Location = new System.Drawing.Point(246, 206);
+            this.addButton.Location = new System.Drawing.Point(72, 362);
+            this.addButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.addButton.Name = "addButton";
-            this.addButton.Size = new System.Drawing.Size(75, 23);
+            this.addButton.Size = new System.Drawing.Size(280, 65);
             this.addButton.TabIndex = 0;
-            this.addButton.Text = "Add";
+            this.addButton.Text = "Add User";
             this.addButton.UseVisualStyleBackColor = false;
             this.addButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(327, 206);
+            this.updateButton.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.updateButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.updateButton.Location = new System.Drawing.Point(378, 362);
+            this.updateButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(75, 23);
+            this.updateButton.Size = new System.Drawing.Size(280, 65);
             this.updateButton.TabIndex = 1;
-            this.updateButton.Text = "Update";
-            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.Text = "Update User";
+            this.updateButton.UseVisualStyleBackColor = false;
             this.updateButton.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
             // deleteButton
             // 
             this.deleteButton.BackColor = System.Drawing.Color.Red;
-            this.deleteButton.ForeColor = System.Drawing.Color.White;
-            this.deleteButton.Location = new System.Drawing.Point(408, 206);
+            this.deleteButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.deleteButton.Location = new System.Drawing.Point(682, 362);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(75, 23);
+            this.deleteButton.Size = new System.Drawing.Size(280, 65);
             this.deleteButton.TabIndex = 2;
-            this.deleteButton.Text = "Delete";
+            this.deleteButton.Text = "Delete User";
             this.deleteButton.UseVisualStyleBackColor = false;
             this.deleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // usersDataGridView
             // 
+            this.usersDataGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.usersDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.usersDataGridView.Location = new System.Drawing.Point(38, 41);
+            this.usersDataGridView.GridColor = System.Drawing.SystemColors.ControlLight;
+            this.usersDataGridView.Location = new System.Drawing.Point(72, 62);
+            this.usersDataGridView.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.usersDataGridView.Name = "usersDataGridView";
-            this.usersDataGridView.Size = new System.Drawing.Size(445, 150);
+            this.usersDataGridView.RowHeadersWidth = 82;
+            this.usersDataGridView.Size = new System.Drawing.Size(890, 288);
             this.usersDataGridView.TabIndex = 3;
             // 
             // UserManagementForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(530, 257);
+            this.BackColor = System.Drawing.SystemColors.Control;
+            this.ClientSize = new System.Drawing.Size(1042, 479);
             this.Controls.Add(this.usersDataGridView);
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.updateButton);
             this.Controls.Add(this.addButton);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.Name = "UserManagementForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "User Management";
             this.Load += new System.EventHandler(this.UserManagementForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.usersDataGridView)).EndInit();

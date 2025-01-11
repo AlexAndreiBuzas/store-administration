@@ -15,9 +15,17 @@ namespace StoreAdministration
         public RegisterForm()
         {
             InitializeComponent();
+
             var dbContext = new ApplicationDbContext();
             _userController = new UserController(dbContext);
             _passwordHasher = new PasswordHasher();
+
+            this.FormClosing += RegisterForm_FormClosing;
+        }
+
+        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         private async void RegisterButton_Click(object sender, EventArgs e)

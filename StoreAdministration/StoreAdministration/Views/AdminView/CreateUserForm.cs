@@ -25,6 +25,10 @@ namespace StoreAdministration.Views.AdminView
             var dbContext = new ApplicationDbContext();
             _userController = new UserController(dbContext);
             _passwordHasher = new PasswordHasher();
+
+            roleComboBox.Items.Add("Admin");
+            roleComboBox.Items.Add("User");
+            roleComboBox.SelectedIndex = 0;
         }
 
         private async void AddUserButton_Click(object sender, EventArgs e)
@@ -32,7 +36,7 @@ namespace StoreAdministration.Views.AdminView
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
             string confirmPassword = confirmPasswordTextBox.Text;
-            string role = roleTextBox.Text;
+            string role = roleComboBox.SelectedItem.ToString();
 
             if (password != confirmPassword)
             {
@@ -58,8 +62,7 @@ namespace StoreAdministration.Views.AdminView
 
             await _userController.AddUserAsync(newUser);
 
-            MessageBox.Show("User registered successfully.");
-  
+            MessageBox.Show("User added successfully.");
         }
     }
 }

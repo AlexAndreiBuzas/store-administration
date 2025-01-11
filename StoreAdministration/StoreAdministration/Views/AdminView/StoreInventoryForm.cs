@@ -22,6 +22,13 @@ namespace StoreAdministration
         {
             InitializeComponent();
             RefreshProducts();
+
+            this.FormClosing += RegisterForm_FormClosing;
+        }
+
+        private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
 
         private async void RefreshProducts()

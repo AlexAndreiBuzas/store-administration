@@ -57,3 +57,14 @@ C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-admin
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Authentication.pdb
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.xml
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.AdminView.CreateUserForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.AddProductForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.AdminView.CreateUserForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.ManageCategoriesForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.ModifyQuantityForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.SalesHistoryForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.SellProductForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.StoreInventoryForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.UserView.BuyProductForm.resources
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Localisation.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Localisation.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\ro\Localisation.resources.dll
