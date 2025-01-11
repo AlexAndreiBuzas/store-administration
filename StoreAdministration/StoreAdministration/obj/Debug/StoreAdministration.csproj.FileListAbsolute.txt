@@ -8,3 +8,9 @@ C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Sto
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.csproj.CoreCompileInputs.cache
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.exe
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.xml
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdm.A8411B28.Up2Date
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\store_db.sqlite
