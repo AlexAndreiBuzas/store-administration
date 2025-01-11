@@ -1,23 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Runtime.Remoting.Contexts;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StoreAdministration.Data;
+using System;
 using System.Windows.Forms;
-using StoreAdministration.Data;
-using StoreAdministration.Models;
 
 namespace StoreAdministration.Views
 {
     public partial class EditUserForm : Form
     {
-
         private readonly ApplicationDbContext _context;
         private readonly int _userId;
+
         public EditUserForm(ApplicationDbContext context, int userId)
         {
             InitializeComponent();

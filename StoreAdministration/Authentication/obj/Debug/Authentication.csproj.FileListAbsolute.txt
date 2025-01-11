@@ -4,3 +4,9 @@ C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-admin
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.csproj.CoreCompileInputs.cache
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.dll
 C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Authentication\bin\Debug\Authentication.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Authentication\bin\Debug\Authentication.pdb
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.csproj.AssemblyReference.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.csproj.CoreCompileInputs.cache
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.dll
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Authentication\obj\Debug\Authentication.pdb

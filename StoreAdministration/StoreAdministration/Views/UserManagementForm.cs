@@ -1,24 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Data.SQLite;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
-using StoreAdministration.Controllers;
+﻿using StoreAdministration.Controllers;
 using StoreAdministration.Data;
 using StoreAdministration.Models;
+using System;
+using System.Linq;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace StoreAdministration.Views
 {
     public partial class UserManagementForm : Form
     {
         private readonly ApplicationDbContext _context;
-        private readonly UserController _userController;
-        private int selectedUserId;
+
         public UserManagementForm(UserController userController)
         {
             InitializeComponent();
@@ -37,32 +30,28 @@ namespace StoreAdministration.Views
 
             MessageBox.Show($"Found {users.Count} users.");
 
-
             usersDataGridView.DataSource = null;
             usersDataGridView.DataSource = users;
             usersDataGridView.AutoGenerateColumns = true;
         }
 
-       
-
-
-        private void addButton_Click(object sender, EventArgs e)
+        private void AddButton_Click(object sender, EventArgs e)
         {
-
+            var registerForm = new RegisterForm();
+            registerForm.Show();
+            this.Hide();
         }
 
-        private async void updateButton_Click(object sender, EventArgs e)
+        private async void UpdateButton_Click(object sender, EventArgs e)
         {
-
             if (usersDataGridView.SelectedRows.Count > 0)
             {
                 var selectedUser = usersDataGridView.SelectedRows[0].DataBoundItem as User;
                 if (selectedUser != null)
                 {
-
                     var editForm = new EditUserForm(_context, selectedUser.Id);
                     editForm.ShowDialog();
-                    await LoadUsers(); 
+                    await LoadUsers();
                 }
             }
             else
@@ -71,7 +60,7 @@ namespace StoreAdministration.Views
             }
         }
 
-        private async void deleteButton_Click(object sender, EventArgs e)
+        private async void DeleteButton_Click(object sender, EventArgs e)
         {
             if (usersDataGridView.SelectedRows.Count > 0)
             {
