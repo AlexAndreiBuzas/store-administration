@@ -1,9 +1,10 @@
-﻿using System;
-using System.Windows.Forms;
-using Authentication;
+﻿using Authentication;
 using StoreAdministration.Controllers;
 using StoreAdministration.Data;
-using StoreAdministration.Models;
+using StoreAdministration.Views.AdminView;
+using StoreAdministration.Views.UserView;
+using System;
+using System.Windows.Forms;
 
 namespace StoreAdministration
 {
@@ -32,6 +33,19 @@ namespace StoreAdministration
                 if (_passwordHasher.VerifyPassword(password, user.Password))
                 {
                     MessageBox.Show("Login successful.");
+
+                    if (user.Role == "Admin")
+                    {
+                        var storeInventoryForm = new StoreInventoryForm();
+                        storeInventoryForm.Show();
+                    }
+                    else if (user.Role == "User")
+                    {
+                        var storeForm = new StoreForm();
+                        storeForm.Show();
+                    }
+
+                    this.Hide();
                 }
                 else
                 {

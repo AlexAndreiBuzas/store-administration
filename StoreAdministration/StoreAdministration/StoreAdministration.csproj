@@ -82,11 +82,23 @@
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\EditUserForm.cs">
+    <Compile Include="Views\AdminView\EditUserForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\EditUserForm.Designer.cs">
+    <Compile Include="Views\AdminView\EditUserForm.Designer.cs">
       <DependentUpon>EditUserForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\StoreInventoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\StoreInventoryForm.Designer.cs">
+      <DependentUpon>StoreInventoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\AdminView\UserManagementForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\AdminView\UserManagementForm.Designer.cs">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\RegisterForm.cs">
       <SubType>Form</SubType>
@@ -94,11 +106,11 @@
     <Compile Include="Views\RegisterForm.Designer.cs">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Views\UserManagementForm.cs">
+    <Compile Include="Views\UserView\StoreForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Views\UserManagementForm.Designer.cs">
-      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    <Compile Include="Views\UserView\StoreForm.Designer.cs">
+      <DependentUpon>StoreForm.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="LogInForm.resx">
       <DependentUpon>LogInForm.cs</DependentUpon>
@@ -112,14 +124,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Views\EditUserForm.resx">
+    <EmbeddedResource Include="Views\AdminView\EditUserForm.resx">
       <DependentUpon>EditUserForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\AdminView\UserManagementForm.resx">
+      <DependentUpon>UserManagementForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\RegisterForm.resx">
       <DependentUpon>RegisterForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Views\UserManagementForm.resx">
-      <DependentUpon>UserManagementForm.cs</DependentUpon>
+    <EmbeddedResource Include="Views\UserView\StoreForm.resx">
+      <DependentUpon>StoreForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -144,6 +159,7 @@
       <Name>Authentication</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
     <PropertyGroup>

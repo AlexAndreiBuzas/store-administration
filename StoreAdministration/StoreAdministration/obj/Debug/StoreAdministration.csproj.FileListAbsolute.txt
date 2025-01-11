@@ -40,3 +40,4 @@ C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Sto
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.EF6.dll
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.Linq.dll
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\System.Data.SQLite.xml
+C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.UserView.StoreForm.resources

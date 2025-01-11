@@ -1,10 +1,8 @@
 ﻿using StoreAdministration.Data;
 using StoreAdministration.Models;
-using System;
 using System.Collections.Generic;
 using System.Data.Entity;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace StoreAdministration.Controllers
@@ -13,7 +11,7 @@ namespace StoreAdministration.Controllers
     {
         private readonly ApplicationDbContext _context;
 
-        public UserController(ApplicationDbContext context) 
+        public UserController(ApplicationDbContext context)
         {
             _context = context;
         }
