@@ -30,8 +30,8 @@
         {
             this.salesHistoryGridView = new System.Windows.Forms.DataGridView();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.refreshButton = new System.Windows.Forms.ToolStripMenuItem();
             this.searchTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.refreshButton = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.salesHistoryGridView)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -41,54 +41,53 @@
             this.salesHistoryGridView.BackgroundColor = System.Drawing.SystemColors.Control;
             this.salesHistoryGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.salesHistoryGridView.GridColor = System.Drawing.SystemColors.ControlLight;
-            this.salesHistoryGridView.Location = new System.Drawing.Point(0, 42);
-            this.salesHistoryGridView.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.salesHistoryGridView.Location = new System.Drawing.Point(0, 22);
+            this.salesHistoryGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.salesHistoryGridView.Name = "salesHistoryGridView";
             this.salesHistoryGridView.RowHeadersWidth = 82;
             this.salesHistoryGridView.RowTemplate.Height = 33;
             this.salesHistoryGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.CellSelect;
-            this.salesHistoryGridView.Size = new System.Drawing.Size(1400, 819);
+            this.salesHistoryGridView.Size = new System.Drawing.Size(700, 426);
             this.salesHistoryGridView.TabIndex = 0;
             // 
             // menuStrip1
             // 
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.searchTextBox,
             this.refreshButton});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1400, 43);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(3, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(700, 25);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
-            // 
-            // refreshButton
-            // 
-            this.refreshButton.Name = "refreshButton";
-            this.refreshButton.Size = new System.Drawing.Size(174, 44);
-            this.refreshButton.Text = "Refresh Sales";
-            this.refreshButton.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // searchTextBox
             // 
             this.searchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.searchTextBox.Name = "searchTextBox";
-            this.searchTextBox.Size = new System.Drawing.Size(396, 39);
+            this.searchTextBox.Size = new System.Drawing.Size(200, 23);
             this.searchTextBox.TextChanged += new System.EventHandler(this.searchTextBox_TextChanged);
+            // 
+            // refreshButton
+            // 
+            this.refreshButton.Name = "refreshButton";
+            this.refreshButton.Size = new System.Drawing.Size(87, 23);
+            this.refreshButton.Text = "Refresh Sales";
+            this.refreshButton.Click += new System.EventHandler(this.refreshToolStripMenuItem_Click);
             // 
             // SalesHistoryForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1400, 873);
+            this.ClientSize = new System.Drawing.Size(700, 454);
             this.Controls.Add(this.salesHistoryGridView);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "SalesHistoryForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sales History";
             ((System.ComponentModel.ISupportInitialize)(this.salesHistoryGridView)).EndInit();
             this.menuStrip1.ResumeLayout(false);

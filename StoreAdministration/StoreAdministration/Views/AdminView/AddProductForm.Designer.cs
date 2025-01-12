@@ -53,95 +53,112 @@
             // productNameGroupBox
             // 
             this.productNameGroupBox.Controls.Add(this.productNameTextBox);
-            this.productNameGroupBox.Location = new System.Drawing.Point(113, 40);
+            this.productNameGroupBox.Location = new System.Drawing.Point(56, 21);
+            this.productNameGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productNameGroupBox.Name = "productNameGroupBox";
-            this.productNameGroupBox.Size = new System.Drawing.Size(454, 76);
+            this.productNameGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productNameGroupBox.Size = new System.Drawing.Size(227, 40);
             this.productNameGroupBox.TabIndex = 0;
             this.productNameGroupBox.TabStop = false;
             this.productNameGroupBox.Text = "Product Name";
             // 
             // productNameTextBox
             // 
-            this.productNameTextBox.Location = new System.Drawing.Point(6, 30);
+            this.productNameTextBox.Location = new System.Drawing.Point(3, 16);
+            this.productNameTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productNameTextBox.Name = "productNameTextBox";
-            this.productNameTextBox.Size = new System.Drawing.Size(432, 31);
+            this.productNameTextBox.Size = new System.Drawing.Size(218, 20);
             this.productNameTextBox.TabIndex = 0;
             // 
             // productDescriptionBox
             // 
             this.productDescriptionBox.Controls.Add(this.productDescriptionTextBox);
-            this.productDescriptionBox.Location = new System.Drawing.Point(113, 122);
+            this.productDescriptionBox.Location = new System.Drawing.Point(56, 63);
+            this.productDescriptionBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productDescriptionBox.Name = "productDescriptionBox";
-            this.productDescriptionBox.Size = new System.Drawing.Size(454, 182);
+            this.productDescriptionBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productDescriptionBox.Size = new System.Drawing.Size(227, 95);
             this.productDescriptionBox.TabIndex = 1;
             this.productDescriptionBox.TabStop = false;
             this.productDescriptionBox.Text = "Product Description";
             // 
             // productDescriptionTextBox
             // 
-            this.productDescriptionTextBox.Location = new System.Drawing.Point(6, 30);
+            this.productDescriptionTextBox.Location = new System.Drawing.Point(3, 16);
+            this.productDescriptionTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productDescriptionTextBox.Multiline = true;
             this.productDescriptionTextBox.Name = "productDescriptionTextBox";
-            this.productDescriptionTextBox.Size = new System.Drawing.Size(432, 135);
+            this.productDescriptionTextBox.Size = new System.Drawing.Size(218, 72);
             this.productDescriptionTextBox.TabIndex = 0;
             // 
             // entryDateGroupBox
             // 
             this.entryDateGroupBox.Controls.Add(this.entryDatePicker);
-            this.entryDateGroupBox.Location = new System.Drawing.Point(113, 310);
+            this.entryDateGroupBox.Location = new System.Drawing.Point(56, 161);
+            this.entryDateGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.entryDateGroupBox.Name = "entryDateGroupBox";
-            this.entryDateGroupBox.Size = new System.Drawing.Size(454, 81);
+            this.entryDateGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entryDateGroupBox.Size = new System.Drawing.Size(227, 42);
             this.entryDateGroupBox.TabIndex = 1;
             this.entryDateGroupBox.TabStop = false;
             this.entryDateGroupBox.Text = "Entry Date";
             // 
             // entryDatePicker
             // 
-            this.entryDatePicker.Location = new System.Drawing.Point(6, 31);
+            this.entryDatePicker.Location = new System.Drawing.Point(3, 16);
+            this.entryDatePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.entryDatePicker.Name = "entryDatePicker";
-            this.entryDatePicker.Size = new System.Drawing.Size(432, 31);
+            this.entryDatePicker.Size = new System.Drawing.Size(218, 20);
             this.entryDatePicker.TabIndex = 0;
             // 
             // expiryDateGroupBox
             // 
             this.expiryDateGroupBox.Controls.Add(this.expiryDatePicker);
-            this.expiryDateGroupBox.Location = new System.Drawing.Point(113, 397);
+            this.expiryDateGroupBox.Location = new System.Drawing.Point(56, 206);
+            this.expiryDateGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.expiryDateGroupBox.Name = "expiryDateGroupBox";
-            this.expiryDateGroupBox.Size = new System.Drawing.Size(454, 81);
+            this.expiryDateGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.expiryDateGroupBox.Size = new System.Drawing.Size(227, 42);
             this.expiryDateGroupBox.TabIndex = 2;
             this.expiryDateGroupBox.TabStop = false;
             this.expiryDateGroupBox.Text = "Expiry Date*";
             // 
             // expiryDatePicker
             // 
-            this.expiryDatePicker.Location = new System.Drawing.Point(6, 30);
+            this.expiryDatePicker.Location = new System.Drawing.Point(3, 16);
+            this.expiryDatePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.expiryDatePicker.Name = "expiryDatePicker";
-            this.expiryDatePicker.Size = new System.Drawing.Size(432, 31);
+            this.expiryDatePicker.Size = new System.Drawing.Size(218, 20);
             this.expiryDatePicker.TabIndex = 0;
             // 
             // quantityGroupBox
             // 
             this.quantityGroupBox.Controls.Add(this.quantityPiker);
-            this.quantityGroupBox.Location = new System.Drawing.Point(113, 484);
+            this.quantityGroupBox.Location = new System.Drawing.Point(56, 252);
+            this.quantityGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityGroupBox.Name = "quantityGroupBox";
-            this.quantityGroupBox.Size = new System.Drawing.Size(454, 80);
+            this.quantityGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantityGroupBox.Size = new System.Drawing.Size(227, 42);
             this.quantityGroupBox.TabIndex = 2;
             this.quantityGroupBox.TabStop = false;
             this.quantityGroupBox.Text = "Quantity";
             // 
             // quantityPiker
             // 
-            this.quantityPiker.Location = new System.Drawing.Point(6, 30);
+            this.quantityPiker.Location = new System.Drawing.Point(3, 16);
+            this.quantityPiker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityPiker.Name = "quantityPiker";
-            this.quantityPiker.Size = new System.Drawing.Size(432, 31);
+            this.quantityPiker.Size = new System.Drawing.Size(216, 20);
             this.quantityPiker.TabIndex = 1;
             // 
             // ProductCategoryGroupBox
             // 
             this.ProductCategoryGroupBox.Controls.Add(this.productCategoryItem);
-            this.ProductCategoryGroupBox.Location = new System.Drawing.Point(113, 570);
+            this.ProductCategoryGroupBox.Location = new System.Drawing.Point(56, 296);
+            this.ProductCategoryGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ProductCategoryGroupBox.Name = "ProductCategoryGroupBox";
-            this.ProductCategoryGroupBox.Size = new System.Drawing.Size(454, 82);
+            this.ProductCategoryGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ProductCategoryGroupBox.Size = new System.Drawing.Size(227, 43);
             this.ProductCategoryGroupBox.TabIndex = 1;
             this.ProductCategoryGroupBox.TabStop = false;
             this.ProductCategoryGroupBox.Text = "Product Category";
@@ -149,18 +166,20 @@
             // productCategoryItem
             // 
             this.productCategoryItem.FormattingEnabled = true;
-            this.productCategoryItem.Location = new System.Drawing.Point(6, 30);
+            this.productCategoryItem.Location = new System.Drawing.Point(3, 16);
+            this.productCategoryItem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productCategoryItem.Name = "productCategoryItem";
-            this.productCategoryItem.Size = new System.Drawing.Size(432, 33);
+            this.productCategoryItem.Size = new System.Drawing.Size(218, 21);
             this.productCategoryItem.TabIndex = 1;
             // 
             // saveProductButton
             // 
             this.saveProductButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.saveProductButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.saveProductButton.Location = new System.Drawing.Point(113, 667);
+            this.saveProductButton.Location = new System.Drawing.Point(56, 347);
+            this.saveProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.saveProductButton.Name = "saveProductButton";
-            this.saveProductButton.Size = new System.Drawing.Size(454, 65);
+            this.saveProductButton.Size = new System.Drawing.Size(227, 34);
             this.saveProductButton.TabIndex = 3;
             this.saveProductButton.Text = "Save Product";
             this.saveProductButton.UseVisualStyleBackColor = false;
@@ -168,10 +187,10 @@
             // 
             // AddProductForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
-            this.ClientSize = new System.Drawing.Size(674, 777);
+            this.ClientSize = new System.Drawing.Size(337, 404);
             this.Controls.Add(this.saveProductButton);
             this.Controls.Add(this.ProductCategoryGroupBox);
             this.Controls.Add(this.quantityGroupBox);
@@ -179,8 +198,9 @@
             this.Controls.Add(this.entryDateGroupBox);
             this.Controls.Add(this.productDescriptionBox);
             this.Controls.Add(this.productNameGroupBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AddProductForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Product";
             this.productNameGroupBox.ResumeLayout(false);
             this.productNameGroupBox.PerformLayout();

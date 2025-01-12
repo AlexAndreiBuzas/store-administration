@@ -45,9 +45,10 @@
             // 
             this.buyProductButton.BackColor = System.Drawing.SystemColors.MenuHighlight;
             this.buyProductButton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.buyProductButton.Location = new System.Drawing.Point(105, 272);
+            this.buyProductButton.Location = new System.Drawing.Point(52, 141);
+            this.buyProductButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.buyProductButton.Name = "buyProductButton";
-            this.buyProductButton.Size = new System.Drawing.Size(454, 65);
+            this.buyProductButton.Size = new System.Drawing.Size(227, 34);
             this.buyProductButton.TabIndex = 8;
             this.buyProductButton.Text = "Buy Product";
             this.buyProductButton.UseVisualStyleBackColor = false;
@@ -56,26 +57,31 @@
             // quantityGroupBox
             // 
             this.quantityGroupBox.Controls.Add(this.quantityPicker);
-            this.quantityGroupBox.Location = new System.Drawing.Point(105, 177);
+            this.quantityGroupBox.Location = new System.Drawing.Point(52, 92);
+            this.quantityGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityGroupBox.Name = "quantityGroupBox";
-            this.quantityGroupBox.Size = new System.Drawing.Size(454, 80);
+            this.quantityGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.quantityGroupBox.Size = new System.Drawing.Size(227, 42);
             this.quantityGroupBox.TabIndex = 7;
             this.quantityGroupBox.TabStop = false;
             this.quantityGroupBox.Text = "Quantity";
             // 
             // quantityPicker
             // 
-            this.quantityPicker.Location = new System.Drawing.Point(6, 30);
+            this.quantityPicker.Location = new System.Drawing.Point(3, 16);
+            this.quantityPicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.quantityPicker.Name = "quantityPicker";
-            this.quantityPicker.Size = new System.Drawing.Size(442, 31);
+            this.quantityPicker.Size = new System.Drawing.Size(221, 20);
             this.quantityPicker.TabIndex = 1;
             // 
             // productQuantityGroupBox
             // 
             this.productQuantityGroupBox.Controls.Add(this.productQuantityLabel);
-            this.productQuantityGroupBox.Location = new System.Drawing.Point(105, 109);
+            this.productQuantityGroupBox.Location = new System.Drawing.Point(52, 57);
+            this.productQuantityGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productQuantityGroupBox.Name = "productQuantityGroupBox";
-            this.productQuantityGroupBox.Size = new System.Drawing.Size(454, 62);
+            this.productQuantityGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productQuantityGroupBox.Size = new System.Drawing.Size(227, 32);
             this.productQuantityGroupBox.TabIndex = 6;
             this.productQuantityGroupBox.TabStop = false;
             this.productQuantityGroupBox.Text = "Product Quantity";
@@ -83,18 +89,21 @@
             // productQuantityLabel
             // 
             this.productQuantityLabel.AutoSize = true;
-            this.productQuantityLabel.Location = new System.Drawing.Point(6, 27);
+            this.productQuantityLabel.Location = new System.Drawing.Point(3, 14);
+            this.productQuantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.productQuantityLabel.Name = "productQuantityLabel";
-            this.productQuantityLabel.Size = new System.Drawing.Size(231, 25);
+            this.productQuantityLabel.Size = new System.Drawing.Size(115, 13);
             this.productQuantityLabel.TabIndex = 0;
             this.productQuantityLabel.Text = "Product Quantity Label";
             // 
             // productNameGroupBox
             // 
             this.productNameGroupBox.Controls.Add(this.productNameLabel);
-            this.productNameGroupBox.Location = new System.Drawing.Point(105, 41);
+            this.productNameGroupBox.Location = new System.Drawing.Point(52, 21);
+            this.productNameGroupBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.productNameGroupBox.Name = "productNameGroupBox";
-            this.productNameGroupBox.Size = new System.Drawing.Size(454, 62);
+            this.productNameGroupBox.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.productNameGroupBox.Size = new System.Drawing.Size(227, 32);
             this.productNameGroupBox.TabIndex = 5;
             this.productNameGroupBox.TabStop = false;
             this.productNameGroupBox.Text = "Product Name";
@@ -102,23 +111,25 @@
             // productNameLabel
             // 
             this.productNameLabel.AutoSize = true;
-            this.productNameLabel.Location = new System.Drawing.Point(6, 27);
+            this.productNameLabel.Location = new System.Drawing.Point(3, 14);
+            this.productNameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.productNameLabel.Name = "productNameLabel";
-            this.productNameLabel.Size = new System.Drawing.Size(207, 25);
+            this.productNameLabel.Size = new System.Drawing.Size(104, 13);
             this.productNameLabel.TabIndex = 0;
             this.productNameLabel.Text = "Product Name Label";
             // 
             // BuyProductForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(674, 374);
+            this.ClientSize = new System.Drawing.Size(337, 194);
             this.Controls.Add(this.buyProductButton);
             this.Controls.Add(this.quantityGroupBox);
             this.Controls.Add(this.productQuantityGroupBox);
             this.Controls.Add(this.productNameGroupBox);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "BuyProductForm";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Buy Product";
             this.quantityGroupBox.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.quantityPicker)).EndInit();

@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Threading;
 using System.Windows.Forms;
 using Authentication;
 using StoreAdministration.Controllers;
 using StoreAdministration.Data;
 using StoreAdministration.Views.UserView;
+using Localisation;
 
 namespace StoreAdministration
 {
@@ -21,6 +23,19 @@ namespace StoreAdministration
             _passwordHasher = new PasswordHasher();
 
             this.FormClosing += RegisterForm_FormClosing;
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        private void ApplyTranslation()
+        {
+            loginButton.Text = Localisation.LanguageString.loginButton;
+            registerButton.Text = Localisation.LanguageString.registerButton;
+            usernameGroupBox.Text = Localisation.LanguageString.usernameGroupBox;
+            passwordGroupBox.Text = Localisation.LanguageString.passwordGroupBox;
+            label1.Text = Localisation.LanguageString.label1;
         }
 
         private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)

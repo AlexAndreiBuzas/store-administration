@@ -68,3 +68,7 @@ C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\Sto
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Localisation.dll
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Localisation.pdb
 C:\Users\alexandrei\Developer\Final\store-administration\StoreAdministration\StoreAdministration\bin\Debug\ro\Localisation.resources.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Localisation.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\Localisation.pdb
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\bin\Debug\ro\Localisation.resources.dll
+C:\Users\Cojanu\Desktop\facultate\Medii si instrumente de programare\store-administration\StoreAdministration\StoreAdministration\obj\Debug\StoreAdministration.Views.UserView.BuyProductForm.resources

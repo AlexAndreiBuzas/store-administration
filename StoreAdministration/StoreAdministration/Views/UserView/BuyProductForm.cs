@@ -65,6 +65,8 @@ namespace StoreAdministration.Views.UserView
                 SaleDate = DateTime.Now
             };
             await _salesHistoryController.AddSalesHistoryAsync(salesHistory);
+
+            this.Close();
         }
     }
 }
