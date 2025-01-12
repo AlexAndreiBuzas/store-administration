@@ -117,19 +117,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="addButton" xml:space="preserve">
+    <value>Adauga Utilizator</value>
+  </data>
+  <data name="addNewProductButton" xml:space="preserve">
+    <value>Adauga un Produs Nou</value>
+  </data>
+  <data name="buyProductButton" xml:space="preserve">
+    <value>Cumpara Produs</value>
+  </data>
+  <data name="CategoriesGroupBox" xml:space="preserve">
+    <value>Cateogrii</value>
+  </data>
+  <data name="CategoryNameGroupBox" xml:space="preserve">
+    <value>Numele Categoriei</value>
+  </data>
+  <data name="confirmPasswordGroupBox" xml:space="preserve">
+    <value>Confirma Parola</value>
+  </data>
+  <data name="createPasswordGroupBox" xml:space="preserve">
+    <value>Creeaza Parola</value>
+  </data>
+  <data name="createUsernameGroupBox" xml:space="preserve">
+    <value>Creeaza Utilizator</value>
+  </data>
+  <data name="deleteButton" xml:space="preserve">
+    <value>Sterge un Utilizator</value>
+  </data>
+  <data name="deleteCategory" xml:space="preserve">
+    <value>Sterge Categoria</value>
+  </data>
+  <data name="entryDateGroupBox" xml:space="preserve">
+    <value>Data intrarii</value>
+  </data>
+  <data name="expiryDateGroupBox" xml:space="preserve">
+    <value>Data Expirare</value>
+  </data>
+  <data name="haveAccount" xml:space="preserve">
+    <value>Daca ai un cont:</value>
+  </data>
   <data name="label1" xml:space="preserve">
     <value>Daca nu ai cont te poti:</value>
   </data>
   <data name="loginButton" xml:space="preserve">
     <value>Logheaza-te</value>
   </data>
+  <data name="logOutButton" xml:space="preserve">
+    <value>Delogheaza-te</value>
+  </data>
+  <data name="ManageCategoriesButton" xml:space="preserve">
+    <value>Meniu Categorii</value>
+  </data>
+  <data name="manageProductsButton" xml:space="preserve">
+    <value>Meniu Produse</value>
+  </data>
+  <data name="modifyProductQuantityButton" xml:space="preserve">
+    <value>Modifica Cantitatea</value>
+  </data>
+  <data name="newQuantityGroupBox" xml:space="preserve">
+    <value>Noua Cantitate</value>
+  </data>
   <data name="passwordGroupBox" xml:space="preserve">
     <value>Parola</value>
+  </data>
+  <data name="ProductCategoryGroupBox" xml:space="preserve">
+    <value>Categoria Produsului</value>
+  </data>
+  <data name="productDescriptionBox" xml:space="preserve">
+    <value>Descriere Produs</value>
+  </data>
+  <data name="productNameGroupBox" xml:space="preserve">
+    <value>Nume Produs</value>
+  </data>
+  <data name="productQuantityGroupBox" xml:space="preserve">
+    <value>Cantitate Produse</value>
+  </data>
+  <data name="quantityGroupBox" xml:space="preserve">
+    <value>Cantitate</value>
+  </data>
+  <data name="refreshButton" xml:space="preserve">
+    <value>Reincarca</value>
+  </data>
+  <data name="refreshProductsButton" xml:space="preserve">
+    <value>Reincarca Produsele</value>
   </data>
   <data name="registerButton" xml:space="preserve">
     <value>Inregistreaza-te</value>
   </data>
+  <data name="roleGroupBox" xml:space="preserve">
+    <value>Rol</value>
+  </data>
+  <data name="saleCompletionButton" xml:space="preserve">
+    <value>Vanzare</value>
+  </data>
+  <data name="saveButton" xml:space="preserve">
+    <value>Salveaza</value>
+  </data>
+  <data name="saveCategoryButton" xml:space="preserve">
+    <value>Salveaza Categoria</value>
+  </data>
+  <data name="updateButton" xml:space="preserve">
+    <value>Actualizeaza Utilizatorul</value>
+  </data>
+  <data name="userManagementButton" xml:space="preserve">
+    <value>Meniu Utilizatori</value>
+  </data>
   <data name="usernameGroupBox" xml:space="preserve">
     <value>Nume Utilizator</value>
+  </data>
+  <data name="viewSalesHistoryButton" xml:space="preserve">
+    <value>Vezi Istoricul Vanzarilor</value>
   </data>
 </root>

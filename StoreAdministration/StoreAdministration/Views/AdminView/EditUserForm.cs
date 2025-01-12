@@ -2,6 +2,7 @@
 using StoreAdministration.Data;
 using System;
 using System.Data.Entity;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace StoreAdministration.Views
@@ -22,6 +23,18 @@ namespace StoreAdministration.Views
 
             roleComboBox.Items.Add("Admin");
             roleComboBox.Items.Add("User");
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        void ApplyTranslation()
+        {
+            createUsernameGroupBox.Text = Localisation.LanguageString.createUsernameGroupBox;
+            passwordGroupBox.Text = Localisation.LanguageString.passwordGroupBox;
+            roleGroupBox.Text = Localisation.LanguageString.roleGroupBox;
+            saveButton.Text = Localisation.LanguageString.saveButton;
         }
 
         private async void EditUserForm_Load(object sender, EventArgs e)

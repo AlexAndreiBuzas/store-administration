@@ -5,6 +5,7 @@ using StoreAdministration.Views.AdminView;
 using System;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -20,8 +21,20 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _context = new ApplicationDbContext();
 
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+
         }
 
+        private void ApplyTranslation()
+        {
+            
+            addButton.Text = Localisation.LanguageString.addButton;
+            updateButton.Text = Localisation.LanguageString.updateButton;
+            deleteButton.Text = Localisation.LanguageString.deleteButton;
+            
+        }
 
         private async void UserManagementForm_Load(object sender, EventArgs e)
         {

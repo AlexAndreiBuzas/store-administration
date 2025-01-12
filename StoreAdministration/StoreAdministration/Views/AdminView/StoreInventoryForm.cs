@@ -5,7 +5,9 @@ using System.ComponentModel.DataAnnotations;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StoreAdministration.Controllers;
@@ -24,6 +26,23 @@ namespace StoreAdministration
             RefreshProducts();
 
             this.FormClosing += RegisterForm_FormClosing;
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        private void ApplyTranslation()
+        {
+            refreshProductsButton.Text = Localisation.LanguageString.refreshProductsButton;
+            addNewProductButton.Text = Localisation.LanguageString.addNewProductButton;
+            modifyProductQuantityButton.Text = Localisation.LanguageString.modifyProductQuantityButton;
+            ManageCategoriesButton.Text = Localisation.LanguageString.ManageCategoriesButton;
+            viewSalesHistoryButton.Text = Localisation.LanguageString.viewSalesHistoryButton;
+            userManagementButton.Text = Localisation.LanguageString.userManagementButton;
+            logOutButton.Text = Localisation.LanguageString.logOutButton;
+            manageProductsButton.Text = Localisation.LanguageString.manageProductsButton;
+
         }
 
         private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)

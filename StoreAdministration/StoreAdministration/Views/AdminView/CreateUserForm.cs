@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Authentication;
@@ -29,6 +30,19 @@ namespace StoreAdministration.Views.AdminView
             roleComboBox.Items.Add("Admin");
             roleComboBox.Items.Add("User");
             roleComboBox.SelectedIndex = 0;
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        void ApplyTranslation()
+        {
+            createUsernameGroupBox.Text = Localisation.LanguageString.createUsernameGroupBox;
+            createPasswordGroupBox.Text = Localisation.LanguageString.createPasswordGroupBox;
+            confirmPasswordGroupBox.Text = Localisation.LanguageString.confirmPasswordGroupBox;
+            roleGroupBox.Text = Localisation.LanguageString.roleGroupBox;
+            AddUserButton.Text = Localisation.LanguageString.addButton;
         }
 
         private async void AddUserButton_Click(object sender, EventArgs e)

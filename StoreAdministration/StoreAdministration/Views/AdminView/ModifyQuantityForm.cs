@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,6 +23,17 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _productController = new ProductController(new ApplicationDbContext());
             LoadProducts();
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        void ApplyTranslation()
+        {
+            ProductCategoryGroupBox.Text = Localisation.LanguageString.productNameGroupBox;
+            newQuantityGroupBox.Text = Localisation.LanguageString.newQuantityGroupBox;
+            saveProductButton.Text = Localisation.LanguageString.saveButton;
         }
 
         private async void LoadProducts()

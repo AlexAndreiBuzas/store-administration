@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -25,6 +26,19 @@ namespace StoreAdministration.Views.UserView
             _productController = new ProductController(new ApplicationDbContext());
             _salesHistoryController = new SalesHistoryController(new ApplicationDbContext());
             UpdateProductDetails();
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        private void ApplyTranslation()
+        {
+            buyProductButton.Text = Localisation.LanguageString.buyProductButton;
+            productNameGroupBox.Text = Localisation.LanguageString.productNameGroupBox;
+            productQuantityGroupBox.Text = Localisation.LanguageString.productQuantityGroupBox;
+            quantityGroupBox.Text = Localisation.LanguageString.quantityGroupBox;
+            
         }
 
         private void UpdateProductDetails()

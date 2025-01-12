@@ -8,6 +8,7 @@ using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -22,6 +23,16 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _categoryController = new CategoryController(new ApplicationDbContext());
             LoadProductCategories();
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        private void ApplyTranslation()
+        {
+            CategoryNameGroupBox.Text = Localisation.LanguageString.CategoryNameGroupBox;
+            saveCategoryButton.Text = Localisation.LanguageString.saveCategoryButton;
+            deleteCategory.Text = Localisation.LanguageString.deleteCategory;
         }
 
         private async void LoadProductCategories()

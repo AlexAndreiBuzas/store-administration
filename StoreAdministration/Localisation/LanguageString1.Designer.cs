@@ -61,6 +61,123 @@ namespace Localisation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add User.
+        /// </summary>
+        public static string addButton {
+            get {
+                return ResourceManager.GetString("addButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add New Product.
+        /// </summary>
+        public static string addNewProductButton {
+            get {
+                return ResourceManager.GetString("addNewProductButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Buy Product.
+        /// </summary>
+        public static string buyProductButton {
+            get {
+                return ResourceManager.GetString("buyProductButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Categories.
+        /// </summary>
+        public static string CategoriesGroupBox {
+            get {
+                return ResourceManager.GetString("CategoriesGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Category Name.
+        /// </summary>
+        public static string CategoryNameGroupBox {
+            get {
+                return ResourceManager.GetString("CategoryNameGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Confirm Password.
+        /// </summary>
+        public static string confirmPasswordGroupBox {
+            get {
+                return ResourceManager.GetString("confirmPasswordGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Password.
+        /// </summary>
+        public static string createPasswordGroupBox {
+            get {
+                return ResourceManager.GetString("createPasswordGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Username.
+        /// </summary>
+        public static string createUsernameGroupBox {
+            get {
+                return ResourceManager.GetString("createUsernameGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete User.
+        /// </summary>
+        public static string deleteButton {
+            get {
+                return ResourceManager.GetString("deleteButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete Category.
+        /// </summary>
+        public static string deleteCategory {
+            get {
+                return ResourceManager.GetString("deleteCategory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Entry Date.
+        /// </summary>
+        public static string entryDateGroupBox {
+            get {
+                return ResourceManager.GetString("entryDateGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Expiry Date.
+        /// </summary>
+        public static string expiryDateGroupBox {
+            get {
+                return ResourceManager.GetString("expiryDateGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you have an account you can:.
+        /// </summary>
+        public static string haveAccount {
+            get {
+                return ResourceManager.GetString("haveAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to If you don&apos;t have an account you can:.
         /// </summary>
         public static string label1 {
@@ -79,11 +196,119 @@ namespace Localisation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Log Out.
+        /// </summary>
+        public static string logOutButton {
+            get {
+                return ResourceManager.GetString("logOutButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Categories.
+        /// </summary>
+        public static string ManageCategoriesButton {
+            get {
+                return ResourceManager.GetString("ManageCategoriesButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Manage Products.
+        /// </summary>
+        public static string manageProductsButton {
+            get {
+                return ResourceManager.GetString("manageProductsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Modify Product Quantity.
+        /// </summary>
+        public static string modifyProductQuantityButton {
+            get {
+                return ResourceManager.GetString("modifyProductQuantityButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Quantity.
+        /// </summary>
+        public static string newQuantityGroupBox {
+            get {
+                return ResourceManager.GetString("newQuantityGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Password.
         /// </summary>
         public static string passwordGroupBox {
             get {
                 return ResourceManager.GetString("passwordGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Category.
+        /// </summary>
+        public static string ProductCategoryGroupBox {
+            get {
+                return ResourceManager.GetString("ProductCategoryGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Description.
+        /// </summary>
+        public static string productDescriptionBox {
+            get {
+                return ResourceManager.GetString("productDescriptionBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Name.
+        /// </summary>
+        public static string productNameGroupBox {
+            get {
+                return ResourceManager.GetString("productNameGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Product Quantity.
+        /// </summary>
+        public static string productQuantityGroupBox {
+            get {
+                return ResourceManager.GetString("productQuantityGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Quantity.
+        /// </summary>
+        public static string quantityGroupBox {
+            get {
+                return ResourceManager.GetString("quantityGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh.
+        /// </summary>
+        public static string refreshButton {
+            get {
+                return ResourceManager.GetString("refreshButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Refresh Products.
+        /// </summary>
+        public static string refreshProductsButton {
+            get {
+                return ResourceManager.GetString("refreshProductsButton", resourceCulture);
             }
         }
         
@@ -97,11 +322,74 @@ namespace Localisation {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Role.
+        /// </summary>
+        public static string roleGroupBox {
+            get {
+                return ResourceManager.GetString("roleGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sale Completion.
+        /// </summary>
+        public static string saleCompletionButton {
+            get {
+                return ResourceManager.GetString("saleCompletionButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save.
+        /// </summary>
+        public static string saveButton {
+            get {
+                return ResourceManager.GetString("saveButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Category.
+        /// </summary>
+        public static string saveCategoryButton {
+            get {
+                return ResourceManager.GetString("saveCategoryButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Update User.
+        /// </summary>
+        public static string updateButton {
+            get {
+                return ResourceManager.GetString("updateButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Management.
+        /// </summary>
+        public static string userManagementButton {
+            get {
+                return ResourceManager.GetString("userManagementButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Username.
         /// </summary>
         public static string usernameGroupBox {
             get {
                 return ResourceManager.GetString("usernameGroupBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Sales History.
+        /// </summary>
+        public static string viewSalesHistoryButton {
+            get {
+                return ResourceManager.GetString("viewSalesHistoryButton", resourceCulture);
             }
         }
     }

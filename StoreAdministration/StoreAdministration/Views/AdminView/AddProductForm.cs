@@ -6,6 +6,7 @@ using System.Data.Entity;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using StoreAdministration.Controllers;
@@ -22,8 +23,21 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _productController = new ProductController(new ApplicationDbContext());
             LoadProductCategories();
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
         }
 
+        private void ApplyTranslation()
+        {
+            productNameGroupBox.Text = Localisation.LanguageString.productNameGroupBox;
+            productDescriptionBox.Text = Localisation.LanguageString.productDescriptionBox;
+            entryDateGroupBox.Text = Localisation.LanguageString.entryDateGroupBox;
+            expiryDateGroupBox.Text = Localisation.LanguageString.expiryDateGroupBox;
+            quantityGroupBox.Text = Localisation.LanguageString.quantityGroupBox;
+            ProductCategoryGroupBox.Text = Localisation.LanguageString.ProductCategoryGroupBox;
+            saveProductButton.Text = Localisation.LanguageString.saveButton;
+        }
 
         private async void LoadProductCategories()
         {

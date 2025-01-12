@@ -7,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -18,7 +19,15 @@ namespace StoreAdministration.Views
         {
             InitializeComponent();
             RefreshSalesHistory();
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
         }
+        private void ApplyTranslation()
+        {
+            refreshButton.Text = Localisation.LanguageString.refreshButton;
+        }
+
         private async void RefreshSalesHistory()
         {
             var controller = new SalesHistoryController(new ApplicationDbContext());

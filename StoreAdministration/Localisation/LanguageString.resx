@@ -117,19 +117,115 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="addButton" xml:space="preserve">
+    <value>Add User</value>
+  </data>
+  <data name="addNewProductButton" xml:space="preserve">
+    <value>Add New Product</value>
+  </data>
+  <data name="buyProductButton" xml:space="preserve">
+    <value>Buy Product</value>
+  </data>
+  <data name="CategoriesGroupBox" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="CategoryNameGroupBox" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="confirmPasswordGroupBox" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="createPasswordGroupBox" xml:space="preserve">
+    <value>Create Password</value>
+  </data>
+  <data name="createUsernameGroupBox" xml:space="preserve">
+    <value>Create Username</value>
+  </data>
+  <data name="deleteButton" xml:space="preserve">
+    <value>Delete User</value>
+  </data>
+  <data name="deleteCategory" xml:space="preserve">
+    <value>Delete Category</value>
+  </data>
+  <data name="entryDateGroupBox" xml:space="preserve">
+    <value>Entry Date</value>
+  </data>
+  <data name="expiryDateGroupBox" xml:space="preserve">
+    <value>Expiry Date</value>
+  </data>
+  <data name="haveAccount" xml:space="preserve">
+    <value>If you have an account you can:</value>
+  </data>
   <data name="label1" xml:space="preserve">
     <value>If you don't have an account you can:</value>
   </data>
   <data name="loginButton" xml:space="preserve">
     <value>Log In</value>
   </data>
+  <data name="logOutButton" xml:space="preserve">
+    <value>Log Out</value>
+  </data>
+  <data name="ManageCategoriesButton" xml:space="preserve">
+    <value>Manage Categories</value>
+  </data>
+  <data name="manageProductsButton" xml:space="preserve">
+    <value>Manage Products</value>
+  </data>
+  <data name="modifyProductQuantityButton" xml:space="preserve">
+    <value>Modify Product Quantity</value>
+  </data>
+  <data name="newQuantityGroupBox" xml:space="preserve">
+    <value>New Quantity</value>
+  </data>
   <data name="passwordGroupBox" xml:space="preserve">
     <value>Password</value>
+  </data>
+  <data name="ProductCategoryGroupBox" xml:space="preserve">
+    <value>Product Category</value>
+  </data>
+  <data name="productDescriptionBox" xml:space="preserve">
+    <value>Product Description</value>
+  </data>
+  <data name="productNameGroupBox" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="productQuantityGroupBox" xml:space="preserve">
+    <value>Product Quantity</value>
+  </data>
+  <data name="quantityGroupBox" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="refreshButton" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="refreshProductsButton" xml:space="preserve">
+    <value>Refresh Products</value>
   </data>
   <data name="registerButton" xml:space="preserve">
     <value>Register</value>
   </data>
+  <data name="roleGroupBox" xml:space="preserve">
+    <value>Role</value>
+  </data>
+  <data name="saleCompletionButton" xml:space="preserve">
+    <value>Sale Completion</value>
+  </data>
+  <data name="saveButton" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="saveCategoryButton" xml:space="preserve">
+    <value>Save Category</value>
+  </data>
+  <data name="updateButton" xml:space="preserve">
+    <value>Update User</value>
+  </data>
+  <data name="userManagementButton" xml:space="preserve">
+    <value>User Management</value>
+  </data>
   <data name="usernameGroupBox" xml:space="preserve">
     <value>Username</value>
+  </data>
+  <data name="viewSalesHistoryButton" xml:space="preserve">
+    <value>View Sales History</value>
   </data>
 </root>

@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace StoreAdministration.Views.UserView
@@ -18,6 +19,16 @@ namespace StoreAdministration.Views.UserView
             RefreshProducts();
 
             this.FormClosing += RegisterForm_FormClosing;
+
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+
+            ApplyTranslation();
+        }
+
+        private void ApplyTranslation()
+        {
+            refreshProductsButton.Text = Localisation.LanguageString.refreshProductsButton;
+            logOutButton.Text = Localisation.LanguageString.logOutButton;
         }
 
         private void RegisterForm_FormClosing(object sender, FormClosingEventArgs e)
