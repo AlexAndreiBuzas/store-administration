@@ -3,6 +3,7 @@ using StoreAdministration.Data;
 using StoreAdministration.Models;
 using StoreAdministration.Views.AdminView;
 using System;
+using System.Diagnostics;
 using System.Linq;
 using System.Runtime.InteropServices;
 using System.Threading;
@@ -54,13 +55,16 @@ namespace StoreAdministration.Views
 
         private void AddButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("AddButton clicked.");
+
             var createUserForm = new CreateUserForm();
             createUserForm.Show();
-            this.Hide();
         }
 
         private async void UpdateButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("UpdateButton clicked.");
+
             if (usersDataGridView.SelectedRows.Count > 0)
             {
                 var selectedUser = usersDataGridView.SelectedRows[0].DataBoundItem as User;
@@ -79,6 +83,8 @@ namespace StoreAdministration.Views
 
         private async void DeleteButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("DeleteButton clicked.");
+
             if (usersDataGridView.SelectedRows.Count > 0)
             {
                 var selectedUser = usersDataGridView.SelectedRows[0].DataBoundItem as User;
@@ -115,6 +121,7 @@ namespace StoreAdministration.Views
                         }
                         catch (Exception ex)
                         {
+                            Trace.WriteLine($"Failed to delete user: {ex.Message}");
                             MessageBox.Show($"Failed to delete user: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }

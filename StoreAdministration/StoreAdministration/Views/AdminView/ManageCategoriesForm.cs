@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -53,6 +54,8 @@ namespace StoreAdministration.Views
 
         private async void SaveCategoryButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("SaveCategoryButton clicked.");
+
             try
             {
                 if (string.IsNullOrWhiteSpace(productCategoryTextBox.Text))
@@ -72,6 +75,7 @@ namespace StoreAdministration.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine("An error occurred while saving the category: " + ex.Message);
                 MessageBox.Show($"An error occurred while saving the category: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
@@ -79,6 +83,8 @@ namespace StoreAdministration.Views
 
         private async void DeleteCategory_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("DeleteCategory clicked.");
+
             try
             {
                 if (productCategoryItem.SelectedItem == null)
@@ -96,6 +102,7 @@ namespace StoreAdministration.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine("An error occurred while deleting the category: " + ex.Message);
                 MessageBox.Show($"An error occurred while deleting the category: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

@@ -2,6 +2,7 @@
 using StoreAdministration.Data;
 using System;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -58,6 +59,7 @@ namespace StoreAdministration.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine($"Failed to load user: {ex.Message}");
                 MessageBox.Show($"Failed to load user: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 this.Close();
             }
@@ -65,6 +67,8 @@ namespace StoreAdministration.Views
 
         private async void SaveButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("Save button clicked.");
+
             try
             {
                 string username = usernameTextBox.Text;
@@ -95,6 +99,7 @@ namespace StoreAdministration.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine($"Failed to update user: {ex.Message}");
                 MessageBox.Show($"Failed to update user: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

@@ -2,6 +2,7 @@
 using StoreAdministration.Models;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,6 +19,8 @@ namespace StoreAdministration.Controllers
 
         public async Task<List<User>> GetUsersAsync()
         {
+            Trace.WriteLine("Getting all users");
+
             return await Task.Run(() =>
             {
                 return _context.Users.ToList();
@@ -26,11 +29,15 @@ namespace StoreAdministration.Controllers
 
         public async Task<User> GetUserByUsernameAsync(string username)
         {
+            Trace.WriteLine($"Getting user by username: {username}");
+
             return await _context.Users.FirstOrDefaultAsync(u => u.Username == username);
         }
 
         public async Task AddUserAsync(User user)
         {
+            Trace.WriteLine($"Adding user: {user.Username}");
+
             await Task.Run(() =>
             {
                 _context.Users.Add(user);
@@ -40,6 +47,8 @@ namespace StoreAdministration.Controllers
 
         public async Task UpdateUserAsync(User user)
         {
+            Trace.WriteLine($"Updating user: {user.Username}");
+
             await Task.Run(() =>
             {
                 var existingUser = _context.Users.Find(user.Id);
@@ -53,6 +62,8 @@ namespace StoreAdministration.Controllers
 
         public async Task DeleteUserAsync(int id)
         {
+            Trace.WriteLine($"Deleting user with id: {id}");
+
             await Task.Run(() =>
             {
                 var user = _context.Users.Find(id);

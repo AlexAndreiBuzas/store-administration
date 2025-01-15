@@ -3,6 +3,7 @@ using StoreAdministration.Controllers;
 using StoreAdministration.Data;
 using StoreAdministration.Models;
 using System;
+using System.Diagnostics;
 using System.Threading;
 using System.Windows.Forms;
 
@@ -47,6 +48,8 @@ namespace StoreAdministration
 
         private async void RegisterButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("RegisterButton clicked.");
+
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
             string confirmPassword = confirmPasswordTextBox.Text;
@@ -83,6 +86,8 @@ namespace StoreAdministration
 
         private void LoginButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("LoginButton clicked.");
+
             var logInForm = new LogInForm();
             logInForm.Show();
             this.Hide();

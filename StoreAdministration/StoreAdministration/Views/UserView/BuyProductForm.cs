@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -50,8 +51,10 @@ namespace StoreAdministration.Views.UserView
             quantityPicker.Maximum = _product.Quantity;
         }
 
-        private async void buyProductButton_ClickAsync(object sender, EventArgs e)
+        private async void BuyProductButton_ClickAsync(object sender, EventArgs e)
         {
+            Trace.WriteLine("BuyProductButton clicked.");
+
             int quantityToSubtract = (int)quantityPicker.Value;
 
             if (quantityToSubtract > _product.Quantity)

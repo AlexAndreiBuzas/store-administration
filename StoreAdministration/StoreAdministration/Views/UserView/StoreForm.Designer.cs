@@ -74,14 +74,14 @@
             this.refreshProductsButton.Name = "refreshProductsButton";
             this.refreshProductsButton.Size = new System.Drawing.Size(212, 39);
             this.refreshProductsButton.Text = "Refresh Products";
-            this.refreshProductsButton.Click += new System.EventHandler(this.refreshProductsButton_Click);
+            this.refreshProductsButton.Click += new System.EventHandler(this.RefreshProductsButton_Click);
             // 
             // productsSearchTextBox
             // 
             this.productsSearchTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.productsSearchTextBox.Name = "productsSearchTextBox";
             this.productsSearchTextBox.Size = new System.Drawing.Size(350, 39);
-            this.productsSearchTextBox.TextChanged += new System.EventHandler(this.productsSearchTextBox_TextChangedAsync);
+            this.productsSearchTextBox.TextChanged += new System.EventHandler(this.ProductsSearchTextBox_TextChangedAsync);
             // 
             // logOutButton
             // 
@@ -89,7 +89,7 @@
             this.logOutButton.Name = "logOutButton";
             this.logOutButton.Size = new System.Drawing.Size(120, 39);
             this.logOutButton.Text = "Log Out";
-            this.logOutButton.Click += new System.EventHandler(this.logOutButton_Click);
+            this.logOutButton.Click += new System.EventHandler(this.LogOutButton_Click);
             // 
             // StoreForm
             // 

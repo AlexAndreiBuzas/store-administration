@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -55,6 +56,8 @@ namespace StoreAdministration.Views
 
         private async void SaveProductButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("SaveProductButton clicked.");
+
             try
             {
                 if (string.IsNullOrWhiteSpace(productNameTextBox.Text) ||
@@ -82,6 +85,7 @@ namespace StoreAdministration.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine($"An error occurred while saving the product: {ex.Message}");
                 MessageBox.Show($"An error occurred while saving the product: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

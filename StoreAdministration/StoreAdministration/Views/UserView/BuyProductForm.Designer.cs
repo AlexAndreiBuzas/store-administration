@@ -52,7 +52,7 @@
             this.buyProductButton.TabIndex = 8;
             this.buyProductButton.Text = "Buy Product";
             this.buyProductButton.UseVisualStyleBackColor = false;
-            this.buyProductButton.Click += new System.EventHandler(this.buyProductButton_ClickAsync);
+            this.buyProductButton.Click += new System.EventHandler(this.BuyProductButton_ClickAsync);
             // 
             // quantityGroupBox
             // 

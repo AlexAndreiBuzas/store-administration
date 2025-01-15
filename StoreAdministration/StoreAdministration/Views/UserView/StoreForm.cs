@@ -3,6 +3,7 @@ using StoreAdministration.Data;
 using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using System.Windows.Forms;
@@ -73,21 +74,27 @@ namespace StoreAdministration.Views.UserView
                 MessageBox.Show("Products DataGridView is not initialized.");
             }
         }
-        private void refreshProductsButton_Click(object sender, EventArgs e)
+        private void RefreshProductsButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("RefreshProductsButton clicked.");
+
             RefreshProducts();
         }
 
-        private void logOutButton_Click(object sender, EventArgs e)
+        private void LogOutButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("LogOutButton clicked.");
+
             var logInForm = new LogInForm();
 
             logInForm.Show();
             this.Hide();
         }
 
-        private async void productsSearchTextBox_TextChangedAsync(object sender, EventArgs e)
+        private async void ProductsSearchTextBox_TextChangedAsync(object sender, EventArgs e)
         {
+            Trace.WriteLine("ProductsSearchTextBox text changed.");
+
             var controller = new ProductController(new ApplicationDbContext());
             var products = await controller.GetProductsAsync();
             var searchText = productsSearchTextBox?.Text?.ToLower();

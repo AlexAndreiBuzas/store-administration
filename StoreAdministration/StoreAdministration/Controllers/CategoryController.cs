@@ -1,5 +1,6 @@
 ﻿using StoreAdministration.Data;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -16,6 +17,8 @@ namespace StoreAdministration.Controllers
 
         public async Task<List<ProductCategory>> GetCategoriesAsync()
         {
+            Trace.WriteLine("Getting all Categories");
+
             return await Task.Run(() =>
             {
                 return _context.ProductCategories.ToList();
@@ -24,6 +27,8 @@ namespace StoreAdministration.Controllers
 
         public async Task AddCategoryAsync(ProductCategory category)
         {
+            Trace.WriteLine($"Adding a new Category: {category}");
+
             await Task.Run(() =>
             {
                 _context.ProductCategories.Add(category);
@@ -33,6 +38,8 @@ namespace StoreAdministration.Controllers
 
         public async Task DeleteCategoryAsync(int id)
         {
+            Trace.WriteLine($"Deleting Category with ID: {id}");
+
             await Task.Run(() =>
             {
                 var category = _context.ProductCategories.Find(id);

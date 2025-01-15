@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -54,6 +55,8 @@ namespace StoreAdministration.Views
 
         private async void SaveProductButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("SaveProductButton clicked.");
+
             try
             {
                 if (productNameItem.SelectedValue == null || newQuantityPiker.Value <= 0)
@@ -83,6 +86,7 @@ namespace StoreAdministration.Views
             }
             catch (Exception ex)
             {
+                Trace.WriteLine($"An error occurred while updating the product quantity: {ex.Message}");
                 MessageBox.Show($"An error occurred while updating the product quantity: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

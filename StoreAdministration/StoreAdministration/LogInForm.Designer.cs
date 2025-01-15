@@ -145,7 +145,7 @@
             this.englishLanguageButton.Name = "englishLanguageButton";
             this.englishLanguageButton.Size = new System.Drawing.Size(29, 20);
             this.englishLanguageButton.Text = "toolStripButton1";
-            this.englishLanguageButton.Click += new System.EventHandler(this.englishLanguageButton_Click);
+            this.englishLanguageButton.Click += new System.EventHandler(this.EnglishLanguageButton_Click);
             // 
             // romanianLanguageButton
             // 
@@ -156,7 +156,7 @@
             this.romanianLanguageButton.Size = new System.Drawing.Size(29, 20);
             this.romanianLanguageButton.Text = "toolStripButton2";
             this.romanianLanguageButton.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.romanianLanguageButton.Click += new System.EventHandler(this.romanianLanguageButton_Click);
+            this.romanianLanguageButton.Click += new System.EventHandler(this.RomanianLanguageButton_Click);
             // 
             // LogInForm
             // 

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Windows.Forms;
 
 namespace StoreAdministration
@@ -13,7 +14,9 @@ namespace StoreAdministration
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            Trace.WriteLine("Application started.");
             Application.Run(new LogInForm());
+            Trace.WriteLine("Application ended.");
         }
     }
 }

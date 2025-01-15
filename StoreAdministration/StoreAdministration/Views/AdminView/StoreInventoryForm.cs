@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Reflection.Emit;
@@ -90,11 +91,15 @@ namespace StoreAdministration
 
         private void RefreshProductsButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("RefreshProductsButton clicked.");
+
             RefreshProducts();
         }
 
         private async void ProductsSearchTextBox_TextChanged(object sender, EventArgs e)
         {
+            Trace.WriteLine("ProductsSearchTextBox Text Changed.");
+
             var controller = new ProductController(new ApplicationDbContext());
             var products = await controller.GetProductsAsync();
             var searchText = productsSearchTextBox?.Text?.ToLower();

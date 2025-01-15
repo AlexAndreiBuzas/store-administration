@@ -6,6 +6,7 @@ using StoreAdministration.Controllers;
 using StoreAdministration.Data;
 using StoreAdministration.Views.UserView;
 using Localisation;
+using System.Diagnostics;
 
 namespace StoreAdministration
 {
@@ -47,6 +48,8 @@ namespace StoreAdministration
 
         private async void LoginButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("LoginButton clicked.");
+
             string username = usernameTextBox.Text;
             string password = passwordTextBox.Text;
 
@@ -84,19 +87,24 @@ namespace StoreAdministration
 
         private void RegisterButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("RegisterButton clicked.");
+
             var registerForm = new RegisterForm();
             registerForm.Show();
             this.Hide();
         }
 
-        private void romanianLanguageButton_Click(object sender, EventArgs e)
+        private void RomanianLanguageButton_Click(object sender, EventArgs e)
         {
-            LanguageManager.CurrentLanguage = "ro";
+            Trace.WriteLine("RomanianLanguageButton clicked.");
 
+            LanguageManager.CurrentLanguage = "ro";
         }
 
-        private void englishLanguageButton_Click(object sender, EventArgs e)
+        private void EnglishLanguageButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("EnglishLanguageButton clicked.");
+
             LanguageManager.CurrentLanguage = "en";
 
         }

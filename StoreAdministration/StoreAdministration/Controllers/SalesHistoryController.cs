@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,6 +19,8 @@ namespace StoreAdministration.Controllers
 
         public async Task<List<SalesHistory>> GetSalesHistoryAsync()
         {
+            Trace.WriteLine("Getting sales history");   
+
             return await Task.Run(() =>
             {
                 return _context.SalesHistories.ToList();
@@ -26,6 +29,8 @@ namespace StoreAdministration.Controllers
 
         public async Task AddSalesHistoryAsync(SalesHistory sale)
         {
+            Trace.WriteLine("Adding sales history");
+
             await Task.Run(() =>
             {
                 if (!sale.SaleDate.HasValue)

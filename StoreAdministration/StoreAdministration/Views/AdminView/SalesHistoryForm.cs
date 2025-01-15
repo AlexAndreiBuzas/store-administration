@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -33,8 +34,13 @@ namespace StoreAdministration.Views
 
         private async void RefreshSalesHistory()
         {
+            Trace.WriteLine("Refreshing sales history.");
+
             var controller = new SalesHistoryController(new ApplicationDbContext());
             var salesHistory = await controller.GetSalesHistoryAsync();
+
+            Trace.WriteLine("Sales history refreshed.");
+
 
             if (salesHistoryGridView != null)
             {
@@ -74,11 +80,15 @@ namespace StoreAdministration.Views
 
         private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("RefreshToolStripMenuItem clicked.");
+
             RefreshSalesHistory();
         }
 
         private async void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
+            Trace.WriteLine("SearchTextBox text changed.");
+
             var controller = new SalesHistoryController(new ApplicationDbContext());
             var salesHistory = await controller.GetSalesHistoryAsync();
             var searchText = searchTextBox?.Text?.ToLower();
@@ -129,6 +139,8 @@ namespace StoreAdministration.Views
 
         private async void ExportButton_Click(object sender, EventArgs e)
         {
+            Trace.WriteLine("ExportButton clicked.");
+
             var controller = new SalesHistoryController(new ApplicationDbContext());
             var salesHistory = await controller.GetSalesHistoryAsync();
 
@@ -147,6 +159,8 @@ namespace StoreAdministration.Views
 
         private void WriteXmlFileLinq(string fileName, List<SalesHistory> salesHistory)
         {
+            Trace.WriteLine("Writing XML file.");
+
             XDocument doc = new XDocument(
                 new XElement("SalesHistories",
                     from s in salesHistory

@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -18,6 +19,8 @@ namespace StoreAdministration.Controllers
 
         public async Task<List<Product>> GetProductsAsync()
         {
+            Trace.WriteLine("Getting all Products");
+
             try
             {
                 return await Task.Run(() =>
@@ -34,6 +37,8 @@ namespace StoreAdministration.Controllers
 
         public async Task AddProductAsync(Product product)
         {
+            Trace.WriteLine("Adding a new Product");
+
             await Task.Run(() =>
             {
                 if (product.EntryDate.HasValue && product.ExpiryDate.HasValue)
@@ -50,6 +55,8 @@ namespace StoreAdministration.Controllers
 
         public async Task UpdateProductAsync(Product product)
         {
+            Trace.WriteLine($"Updating the Product: {product.Name}");
+
             await Task.Run(() =>
             {
                 var existingProduct = _context.Products.Find(product.Id);
@@ -63,6 +70,8 @@ namespace StoreAdministration.Controllers
 
         public async Task DeleteProductAsync(int id)
         {
+            Trace.WriteLine($"Deleting the Product: {id}");
+
             await Task.Run(() =>
             {
                 var product = _context.Products.Find(id);
@@ -76,6 +85,8 @@ namespace StoreAdministration.Controllers
 
         public async Task<List<Product>> SearchProductsAsync(string searchText)
         {
+            Trace.WriteLine("Searching for Products");
+
             return await Task.Run(() =>
             {
                 return _context.Products
