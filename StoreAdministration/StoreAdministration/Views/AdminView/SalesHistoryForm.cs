@@ -19,12 +19,14 @@ namespace StoreAdministration.Views
         {
             InitializeComponent();
             RefreshSalesHistory();
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             refreshButton.Text = Localisation.LanguageString.refreshButton;
         }
 

@@ -157,7 +157,7 @@
     <value>Daca ai un cont:</value>
   </data>
   <data name="label1" xml:space="preserve">
-    <value>Daca nu ai cont te poti:</value>
+    <value>Daca nu ai cont:</value>
   </data>
   <data name="loginButton" xml:space="preserve">
     <value>Logheaza-te</value>

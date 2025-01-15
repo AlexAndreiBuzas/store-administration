@@ -20,13 +20,15 @@ namespace StoreAdministration.Views.UserView
 
             this.FormClosing += RegisterForm_FormClosing;
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             refreshProductsButton.Text = Localisation.LanguageString.refreshProductsButton;
             logOutButton.Text = Localisation.LanguageString.logOutButton;
         }

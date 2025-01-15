@@ -23,7 +23,7 @@ namespace StoreAdministration
 
             this.FormClosing += RegisterForm_FormClosing;
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
@@ -35,6 +35,8 @@ namespace StoreAdministration
 
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             createPasswordGroupBox.Text = Localisation.LanguageString.createPasswordGroupBox;
             createUsernameGroupBox.Text = Localisation.LanguageString.createUsernameGroupBox;
             confirmPasswordGroupBox.Text = Localisation.LanguageString.confirmPasswordGroupBox;

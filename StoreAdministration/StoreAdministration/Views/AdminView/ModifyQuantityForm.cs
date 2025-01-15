@@ -24,13 +24,15 @@ namespace StoreAdministration.Views
             _productController = new ProductController(new ApplicationDbContext());
             LoadProducts();
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             ProductCategoryGroupBox.Text = Localisation.LanguageString.productNameGroupBox;
             newQuantityGroupBox.Text = Localisation.LanguageString.newQuantityGroupBox;
             saveProductButton.Text = Localisation.LanguageString.saveButton;

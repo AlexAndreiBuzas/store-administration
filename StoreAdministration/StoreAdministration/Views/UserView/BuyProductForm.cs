@@ -27,13 +27,15 @@ namespace StoreAdministration.Views.UserView
             _salesHistoryController = new SalesHistoryController(new ApplicationDbContext());
             UpdateProductDetails();
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             buyProductButton.Text = Localisation.LanguageString.buyProductButton;
             productNameGroupBox.Text = Localisation.LanguageString.productNameGroupBox;
             productQuantityGroupBox.Text = Localisation.LanguageString.productQuantityGroupBox;

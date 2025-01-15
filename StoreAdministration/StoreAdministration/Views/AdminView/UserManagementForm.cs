@@ -21,15 +21,15 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _context = new ApplicationDbContext();
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
-
         }
 
         private void ApplyTranslation()
         {
-            
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             addButton.Text = Localisation.LanguageString.addButton;
             updateButton.Text = Localisation.LanguageString.updateButton;
             deleteButton.Text = Localisation.LanguageString.deleteButton;

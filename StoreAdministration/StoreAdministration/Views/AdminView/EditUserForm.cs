@@ -24,13 +24,15 @@ namespace StoreAdministration.Views
             roleComboBox.Items.Add("Admin");
             roleComboBox.Items.Add("User");
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             createUsernameGroupBox.Text = Localisation.LanguageString.createUsernameGroupBox;
             passwordGroupBox.Text = Localisation.LanguageString.passwordGroupBox;
             roleGroupBox.Text = Localisation.LanguageString.roleGroupBox;

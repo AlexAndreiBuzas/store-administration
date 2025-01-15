@@ -23,13 +23,15 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _categoryController = new CategoryController(new ApplicationDbContext());
             LoadProductCategories();
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             CategoryNameGroupBox.Text = Localisation.LanguageString.CategoryNameGroupBox;
             saveCategoryButton.Text = Localisation.LanguageString.saveCategoryButton;
             deleteCategory.Text = Localisation.LanguageString.deleteCategory;

@@ -27,13 +27,15 @@ namespace StoreAdministration
 
             this.FormClosing += RegisterForm_FormClosing;
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             refreshProductsButton.Text = Localisation.LanguageString.refreshProductsButton;
             addNewProductButton.Text = Localisation.LanguageString.addNewProductButton;
             modifyProductQuantityButton.Text = Localisation.LanguageString.modifyProductQuantityButton;

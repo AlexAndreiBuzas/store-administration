@@ -24,13 +24,15 @@ namespace StoreAdministration
 
             this.FormClosing += RegisterForm_FormClosing;
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         private void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             loginButton.Text = Localisation.LanguageString.loginButton;
             registerButton.Text = Localisation.LanguageString.registerButton;
             usernameGroupBox.Text = Localisation.LanguageString.usernameGroupBox;
@@ -85,6 +87,18 @@ namespace StoreAdministration
             var registerForm = new RegisterForm();
             registerForm.Show();
             this.Hide();
+        }
+
+        private void romanianLanguageButton_Click(object sender, EventArgs e)
+        {
+            LanguageManager.CurrentLanguage = "ro";
+
+        }
+
+        private void englishLanguageButton_Click(object sender, EventArgs e)
+        {
+            LanguageManager.CurrentLanguage = "en";
+
         }
     }
 }

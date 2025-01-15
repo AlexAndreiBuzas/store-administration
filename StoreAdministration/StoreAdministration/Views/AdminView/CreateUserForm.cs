@@ -31,13 +31,15 @@ namespace StoreAdministration.Views.AdminView
             roleComboBox.Items.Add("User");
             roleComboBox.SelectedIndex = 0;
 
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
 
         void ApplyTranslation()
         {
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo(LanguageManager.CurrentLanguage);
+
             createUsernameGroupBox.Text = Localisation.LanguageString.createUsernameGroupBox;
             createPasswordGroupBox.Text = Localisation.LanguageString.createPasswordGroupBox;
             confirmPasswordGroupBox.Text = Localisation.LanguageString.confirmPasswordGroupBox;

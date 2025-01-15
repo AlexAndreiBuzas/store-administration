@@ -23,7 +23,7 @@ namespace StoreAdministration.Views
             InitializeComponent();
             _productController = new ProductController(new ApplicationDbContext());
             LoadProductCategories();
-            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("ro");
+            LanguageManager.LanguageChanged += ApplyTranslation;
 
             ApplyTranslation();
         }
