@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace StoreAdministration.Views
 {
@@ -71,12 +72,12 @@ namespace StoreAdministration.Views
             }
         }
 
-        private void refreshToolStripMenuItem_Click(object sender, EventArgs e)
+        private void RefreshToolStripMenuItem_Click(object sender, EventArgs e)
         {
             RefreshSalesHistory();
         }
 
-        private async void searchTextBox_TextChanged(object sender, EventArgs e)
+        private async void SearchTextBox_TextChanged(object sender, EventArgs e)
         {
             var controller = new SalesHistoryController(new ApplicationDbContext());
             var salesHistory = await controller.GetSalesHistoryAsync();
@@ -124,6 +125,43 @@ namespace StoreAdministration.Views
             {
                 MessageBox.Show("Sales History DataGridView is not initialized.");
             }
+        }
+
+        private async void ExportButton_Click(object sender, EventArgs e)
+        {
+            var controller = new SalesHistoryController(new ApplicationDbContext());
+            var salesHistory = await controller.GetSalesHistoryAsync();
+
+            SaveFileDialog saveFileDialog = new SaveFileDialog()
+            {
+                Filter = "XML files (*.xml)|*.xml",
+                FileName = "SaveSalesHistoryXML"
+            };
+
+            if (saveFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                WriteXmlFileLinq(saveFileDialog.FileName, salesHistory);
+                MessageBox.Show("Sales history exported successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+        }
+
+        private void WriteXmlFileLinq(string fileName, List<SalesHistory> salesHistory)
+        {
+            XDocument doc = new XDocument(
+                new XElement("SalesHistories",
+                    from s in salesHistory
+                    select new XElement("SalesHistory",
+                        new XAttribute("Id", s.Id),
+                        new XElement("ProductId", s.Product?.Id ?? 0),
+                        new XElement("ProductName", s.Product?.Name ?? "Unknown Product"),
+                        new XElement("Quantity", s.Quantity),
+                        new XElement("CategoryName", s.Product?.ProductCategory?.Name ?? "Unknown Category"),
+                        new XElement("SaleDate", s.SaleDate?.ToString("o") ?? "No Date")
+                    )
+                )
+            );
+
+            doc.Save(fileName);
         }
     }
 }
